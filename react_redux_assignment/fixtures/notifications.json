@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "author": { "id": 2, "name": "John" },
+    "message": "Welcome to the app",
+    "date": "2025-09-28T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "author": { "id": 3, "name": "Jane" },
+    "message": "You have new tasks",
+    "date": "2025-09-29T12:00:00Z"
+  }
+]

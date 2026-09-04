@@ -1,0 +1,21 @@
+{
+  "name": "react_redux_assignment",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "normalizr": "^3.6.1",
+    "redux": "^4.2.1",
+    "redux-thunk": "^2.4.2",
+    "immutable": "^4.3.1"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "redux-mock-store": "^1.5.4",
+    "babel-jest": "^29.0.0",
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0"
+  }
+}

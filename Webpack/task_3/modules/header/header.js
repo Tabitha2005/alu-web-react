@@ -5,5 +5,5 @@ import './header.css';
 
 // append elements
 $('body').append(`<div id="logo"></div>`);
-$('body').append(`<p>Holberton Dashboard</p>`);
+$('body').append(`<h1>Holberton Dashboard</h1>`);
 console.log('Init header');

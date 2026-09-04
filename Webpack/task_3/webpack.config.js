@@ -5,11 +5,9 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
 	mode: 'development',
 	entry: {
-		all: [
-			'./modules/header/header.js',
-			'./modules/body/body.js',
-			'./modules/footer/footer.js',
-		]
+		header: './modules/header/header.js',
+		body: './modules/body/body.js',
+		footer: './modules/footer/footer.js'
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -29,7 +27,7 @@ module.exports = {
 						loader: 'image-webpack-loader',
 						options: {
 							bypassOnDebug: true,
-							disable: true
+							disable: false
 						},
 					},
 				],
@@ -40,7 +38,8 @@ module.exports = {
 	devServer: {
 		static: path.join(__dirname, './public'),
 		compress: true,
-		port: 8564
+		port: 8564,
+		open: true
 	},
 	plugins: [
 		new CleanWebpackPlugin(), // clean the public folder before building

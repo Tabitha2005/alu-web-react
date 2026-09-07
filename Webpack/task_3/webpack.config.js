@@ -7,7 +7,7 @@ module.exports = {
 	entry: {
 		header: './modules/header/header.js',
 		body: './modules/body/body.js',
-		footer: './modules/footer/footer.js'
+		footer: './modules/footer/footer.js',
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -27,7 +27,7 @@ module.exports = {
 						loader: 'image-webpack-loader',
 						options: {
 							bypassOnDebug: true,
-							disable: false
+							disable: true
 						},
 					},
 				],
@@ -38,8 +38,7 @@ module.exports = {
 	devServer: {
 		static: path.join(__dirname, './public'),
 		compress: true,
-		port: 8564,
-		open: true
+		port: 8564
 	},
 	plugins: [
 		new CleanWebpackPlugin(), // clean the public folder before building

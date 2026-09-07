@@ -8,7 +8,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     performance: {
-    hints: false,
+    maxAssetSize: 1000000,
   },
     module: {
     rules: [
@@ -23,8 +23,7 @@ module.exports = {
           {
             loader: "image-webpack-loader",
             options: {
-              bypassOnDebug: true,
-              disable: true,
+              disable: false,
             },
           },
         ],
